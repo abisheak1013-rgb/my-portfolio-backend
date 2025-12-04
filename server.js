@@ -35,10 +35,11 @@ app.use("/user", UserRouter);
 app.use("/order", OrderRouter);
 app.use("/message", MessageRouter);
 
-app.listen(8080, () => {
-  console.log("Server Is Running On Port 8080");
-});
+const PORT = process.env.PORT || 8080;
 
+app.listen(PORT, () => {
+  console.log("Server Is Running On Port ${PORT}");
+});
 
 
 
