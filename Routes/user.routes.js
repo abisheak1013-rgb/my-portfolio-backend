@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
 const { authenticateJWT } = require("./Middleware/middleware.js");
-const UserControllers = require("../controller/user.controller");
-const SampleControllers = require("../controller/sample.controller");
+const UserControllers = require("../Controller/user.controller");
+const SampleControllers = require("../Controller/sample.controller");
 
 // Register and login routes
 router.get("/userAggregate", UserControllers.aggregate);
