@@ -15,7 +15,7 @@ router.get("/ping", (req, res) => {
 router.post("/register", UserControllers.Register);
 router.get("/findalluserss/:id", authenticateJWT,UserControllers.Findalluser);
 router.get("/findalluser",UserControllers.Findalluser);
-router.post("/createSample",SamepleControllers.createSample);
+router.post("/createSample",SampleControllers.createSample);
 
 
 
